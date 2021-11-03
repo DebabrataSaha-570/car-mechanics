@@ -10,6 +10,7 @@ import {
   Route,
   Link
 } from "react-router-dom";
+import Booking from './Pages/Booking/Booking/Booking';
 function App() {
   return (
     <div className="App">
@@ -21,6 +22,10 @@ function App() {
 
           <Route exact path="/">
             <Home></Home>
+          </Route>
+
+          <Route path="/Booking/:serviceId">
+            <Booking></Booking>
           </Route>
 
           <Route path="*">
