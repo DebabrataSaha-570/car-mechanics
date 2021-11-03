@@ -31,7 +31,7 @@ const Usefirebase = () => {
                 setUsers({})
             }
         });
-        return unSubscribed;
+        return () => unSubscribed;
     }, [])
 
     const logOut = () => {
