@@ -13,31 +13,34 @@ import {
 import Booking from './Pages/Booking/Booking/Booking';
 import Login from './Pages/Login/Login/Login';
 import Header from './Pages/Shared/Header/Header';
+import AuthProvider from './Context/AuthProvider';
 function App() {
   return (
     <div className="App">
-      <Router>
-        <Header> </Header>
-        <Switch>
-          <Route path="/home">
-            <Home></Home>
-          </Route>
+      <AuthProvider>
+        <Router>
+          <Header> </Header>
+          <Switch>
+            <Route path="/home">
+              <Home></Home>
+            </Route>
 
-          <Route exact path="/">
-            <Home></Home>
-          </Route>
+            <Route exact path="/">
+              <Home></Home>
+            </Route>
 
-          <Route path="/Booking/:serviceId">
-            <Booking></Booking>
-          </Route>
-          <Route path="/login">
-            <Login></Login>
-          </Route>
-          <Route path="*">
-            <NotFound></NotFound>
-          </Route>
-        </Switch>
-      </Router>
+            <Route path="/Booking/:serviceId">
+              <Booking></Booking>
+            </Route>
+            <Route path="/login">
+              <Login></Login>
+            </Route>
+            <Route path="*">
+              <NotFound></NotFound>
+            </Route>
+          </Switch>
+        </Router>
+      </AuthProvider>
     </div>
   );
 }
