@@ -1,3 +1,1 @@
-### live site: https://pedantic-bose-ada3d2.netlify.app/
-
-- This app gives us the basic idea of how to make a react based website responsive . 
+### live site: https://car-mechanics-8f0f1.web.app/
