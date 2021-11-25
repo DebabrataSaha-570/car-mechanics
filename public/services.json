@@ -3,35 +3,35 @@
         "id": 1,
         "name": "Replace Tire",
         "price": 200,
-        "time": 2,
+        "description": "lorem...",
         "img": "https://i.ibb.co/WgXS2FS/Car-wash-detailing-station.jpg"
     },
     {
         "id": 2,
         "name": "Polish Car",
         "price": 250,
-        "time": 3,
+        "description": "lorem...",
         "img": "https://i.ibb.co/qJDt92N/Man-polishing-car-inside-at-car-service.jpg"
     },
     {
         "id": 3,
         "name": "Repairing Vehicle",
         "price": 200,
-        "time": 2,
+        "description": "lorem...",
         "img": "https://i.ibb.co/FDS2ngC/Picture-showing-muscular-car-service-worker-repairing-vehicle.jpg"
     },
     {
         "id": 4,
         "name": "Change wheels",
         "price": 200,
-        "time": 2,
+        "description": "lorem...",
         "img": "https://i.ibb.co/y5NkNXx/Car-mechanic-changing-wheels-in-car.jpg"
     },
     {
         "id": 5,
         "name": "Fix Car",
         "price": 200,
-        "time": 2,
+        "description": "lorem...",
         "img": "https://i.ibb.co/ZzrcBBn/Mechanic-hand-checking-and-fixing-a-broken-car-in-car-service-garage.jpg"
     }
 ]
