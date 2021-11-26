@@ -1,16 +1,16 @@
 import axios from 'axios';
 import React from 'react';
-import { useForm, reset } from "react-hook-form";
+import { useForm } from "react-hook-form";
 import './AddService.css'
 const AddService = () => {
-    const { register, handleSubmit } = useForm();
+    const { register, handleSubmit, reset } = useForm();
     const onSubmit = data => {
         axios.post('http://localhost:5000/services', data)
             .then((res) => {
                 console.log(res)
                 if (res.data.insertedId) {
                     alert('added successfully')
-                    // reset()
+                    reset()
                 }
             })
             .catch((err) => {
@@ -26,7 +26,7 @@ const AddService = () => {
                 <textarea {...register("description")} placeholder="description " />
                 <input type="number" {...register("price",)} placeholder="price" />
                 <input {...register("img")} placeholder="image URL" />
-
+                {/* <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Exercitationem quas magnam nesciunt odio deserunt ad aperiam id vero cupiditate optio!</p> */}
                 <input type="submit" />
             </form>
         </div>
