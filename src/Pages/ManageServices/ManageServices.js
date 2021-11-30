@@ -3,7 +3,8 @@ import React, { useEffect, useState } from 'react';
 const ManageServices = () => {
     const [services, setServices] = useState([])
     useEffect(() => {
-        fetch('http://localhost:5000/services')
+        fetch('https://guarded-springs-98889.herokuapp.com/services')
+            // fetch('http://localhost:5000/services')
             .then(res => res.json())
             .then(data => {
                 setServices(data)
@@ -11,7 +12,8 @@ const ManageServices = () => {
     }, [])
     const handleDelete = (id) => {
         console.log(id)
-        const url = `http://localhost:5000/services/${id}`
+        const url = `https://guarded-springs-98889.herokuapp.com/services/${id}`
+        // const url = `http://localhost:5000/services/${id}`
         fetch(url, {
             method: 'DELETE',
         })

@@ -5,7 +5,8 @@ import './AddService.css'
 const AddService = () => {
     const { register, handleSubmit, reset } = useForm();
     const onSubmit = data => {
-        axios.post('http://localhost:5000/services', data)
+        axios.post('https://guarded-springs-98889.herokuapp.com/services', data)
+            // axios.post('http://localhost:5000/services', data)
             .then((res) => {
                 console.log(res)
                 if (res.data.insertedId) {

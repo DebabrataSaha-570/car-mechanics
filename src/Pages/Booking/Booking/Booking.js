@@ -5,7 +5,8 @@ const Booking = () => {
     let { serviceId } = useParams()
     const [service, setService] = useState({})
     useEffect(() => {
-        fetch(`http://localhost:5000/services/${serviceId}`)
+        fetch(`https://guarded-springs-98889.herokuapp.com/services/${serviceId}`)
+            // fetch(`http://localhost:5000/services/${serviceId}`)
             .then(res => res.json())
             .then(data => {
                 setService(data)
